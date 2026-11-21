@@ -1,0 +1,50 @@
+name: riverpod_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  core:
+    path: ../packages/core
+  domain:
+    path: ../packages/domain
+  data_supabase:
+    path: ../packages/data_supabase
+
+  material_ui: ^1.1.0
+  cupertino_icons: ^1.0.8
+  supabase_flutter: ^2.18.3
+  flutter_dotenv: ^6.0.2
+  flutter_riverpod: ^3.5.0
+  riverpod_annotation: ^4.0.8
+  go_router: ^18.1.4
+  equatable: ^3.0.0
+  fpdart: ^1.2.0
+  cached_network_image: ^4.0.7
+  image_picker: ^1.2.4
+  intl: ^0.20.3
+  uuid: ^4.6.0
+  string_validator: ^1.2.0
+  stream_transform: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  build_runner: ^2.17.1
+  riverpod_generator: ^4.0.10
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
