@@ -4,7 +4,7 @@ plugins:
   riverpod_lint: ^3.2.0
 
 analyzer:
-  errors: 
+  errors:
     invalid_annotation_target: ignore
   exclude:
     - build/**
@@ -20,6 +20,9 @@ analyzer:
     - "**/*.g.dart"
     - "**.config.dart"
     - "**/*.freezed.dart"
+
+formatter:
+  trailing_commas: preserve
 
 linter:
   rules:
