@@ -27,6 +27,7 @@ class UserModel extends UserEntity {
   factory UserModel.fromJson(Map<String, dynamic> json) =>
       _$UserModelFromJson(json);
 
+  // We override the avatarUrl because of the Supabase API returns 'avatar_url'
   @JsonKey(name: 'avatar_url')
   @override
   String? get avatarUrl;
