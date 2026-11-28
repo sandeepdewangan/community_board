@@ -27,6 +27,10 @@ class StorageException extends AppException {
   const StorageException({required super.message});
 }
 
+class StorageServerException extends AppException {
+  const StorageServerException({required super.message});
+}
+
 class NetworkException extends AppException {
   const NetworkException({
     super.message =

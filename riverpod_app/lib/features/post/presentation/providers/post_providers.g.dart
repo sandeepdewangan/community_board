@@ -139,3 +139,98 @@ final class GetPostUsecaseProvider
 }
 
 String _$getPostUsecaseHash() => r'4674bd6258451763277c0328f936f1c1c737b982';
+
+@ProviderFor(createPostUsecase)
+final createPostUsecaseProvider = CreatePostUsecaseProvider._();
+
+final class CreatePostUsecaseProvider
+    extends
+        $FunctionalProvider<
+          CreatePostUsecase,
+          CreatePostUsecase,
+          CreatePostUsecase
+        >
+    with $Provider<CreatePostUsecase> {
+  CreatePostUsecaseProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'createPostUsecaseProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$createPostUsecaseHash();
+
+  @$internal
+  @override
+  $ProviderElement<CreatePostUsecase> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  CreatePostUsecase create(Ref ref) {
+    return createPostUsecase(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(CreatePostUsecase value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<CreatePostUsecase>(value),
+    );
+  }
+}
+
+String _$createPostUsecaseHash() => r'b44472d17b5afd0e0cbb0c6b8df44a39faed4bf9';
+
+@ProviderFor(uploadPostImageUsecase)
+final uploadPostImageUsecaseProvider = UploadPostImageUsecaseProvider._();
+
+final class UploadPostImageUsecaseProvider
+    extends
+        $FunctionalProvider<
+          UploadPostImageUsecase,
+          UploadPostImageUsecase,
+          UploadPostImageUsecase
+        >
+    with $Provider<UploadPostImageUsecase> {
+  UploadPostImageUsecaseProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'uploadPostImageUsecaseProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$uploadPostImageUsecaseHash();
+
+  @$internal
+  @override
+  $ProviderElement<UploadPostImageUsecase> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  UploadPostImageUsecase create(Ref ref) {
+    return uploadPostImageUsecase(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(UploadPostImageUsecase value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<UploadPostImageUsecase>(value),
+    );
+  }
+}
+
+String _$uploadPostImageUsecaseHash() =>
+    r'73fd68f148340d4904386f521e2cdd9b853b7431';

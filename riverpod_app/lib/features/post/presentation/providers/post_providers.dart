@@ -32,3 +32,15 @@ PostRepository postRepository(Ref ref) {
 GetPostsUsecase getPostUsecase(Ref ref) {
   return GetPostsUsecase(postRepository: ref.watch(postRepositoryProvider));
 }
+
+@riverpod
+CreatePostUsecase createPostUsecase(Ref ref) {
+  return CreatePostUsecase(postRepository: ref.watch(postRepositoryProvider));
+}
+
+@riverpod
+UploadPostImageUsecase uploadPostImageUsecase(Ref ref) {
+  return UploadPostImageUsecase(
+    postRepository: ref.watch(postRepositoryProvider),
+  );
+}
